@@ -1,0 +1,106 @@
+section#login_modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  width: 100%;
+  height: 100%;
+}
+
+#login_body {
+  margin: 0;
+  padding: 0;
+}
+
+#modal_header {
+  text-align: right;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#modal_close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#modal_close:hover {
+  color: tomato;
+}
+
+#login_body form {
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  background-color: #e3eea2;
+  text-align: center;
+
+  border-radius: 20px;
+
+  -webkit-animation-name: login_box_top_down;
+  -webkit-animation-duration: 0.8s;
+
+  -moz-animation-name: login_box_top_down;
+  -moz-animation-duration: 0.8s;
+}
+
+#login_body form h2 {
+  color: black;
+  font-weight: 500;
+}
+
+#login_body form h2 i {
+  color: tomato;
+}
+
+#login_body form input,
+#login_body form button {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+  padding: 16px 10px;
+  background: none;
+
+  outline: 0;
+
+  border: 0;
+  border-radius: 25px;
+
+  transition: 0.5s;
+}
+
+#login_body form input {
+  border: 2px solid #3498db;
+  color: white;
+}
+
+#login_body form input:focus {
+  width: 280px;
+  border: 2px solid #ff7b00;
+}
+
+#login_body form button {
+  border: 2px solid #2ecc71;
+  color: gray;
+}
+
+#login_body form button:hover {
+  background-color: #2ecc71;
+}
+
+@keyframes login_box_top_down {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
